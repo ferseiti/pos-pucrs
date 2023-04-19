@@ -1,4 +1,54 @@
 <!-- Calculo do app de corrida -->
 <!-- Preço Base
 Custo fixo
-Horários e regiões de maior movimento -->
+Horários e regiões de maior movimento 
+- Distancia em km
+- tempo em minutos
+-->
+<!-- setting up encoding -->
+<meta charset="utf-8">
+
+<input placeholder="Distância em km" id="campoDistanciaKM">
+
+<input placeholder="Tempo em minutos" id="campoTempoMinutos">
+
+<button onclick="calculaCorrida()">Calcular</button>
+
+<script>
+
+    function isCamposVazio() {
+        var isCampoDistanciaVazio = campoDistanciaKM.value == "";
+        var isCampoTempoVazio = campoTempoMinutos.value == "";
+
+        if (isCampoDistanciaVazio || isCampoTempoVazio) {
+            return true;
+        }
+    }
+
+    function formataMoeda(valor) {
+        return valor.toFixed(2).replace('.', ',');
+    }
+
+    function calculaCorrida() {
+        // Validar campos
+        if (isCamposVazio()){
+            alert("Preencha os campos");
+            return;
+        }
+
+        if (isNaN(campoDistanciaKM.value) || isNaN(campoTempoMinutos.value)) {
+            alert("Preencha os campos com números");
+            return;
+        }
+        
+        // Aplicar regra de negócio
+        var tarifaDinamica = 1.5;
+        var distanciaKm = campoDistanciaKM.value * tarifaDinamica;
+        var valorTempo = 0.27;
+        var tempoMinutos = campoTempoMinutos.value * valorTempo;
+        var valorCorrida = distanciaKm + tempoMinutos;
+
+        // Output
+        alert("Cálculo do app R$" + formataMoeda(valorCorrida));
+    }
+</script>
