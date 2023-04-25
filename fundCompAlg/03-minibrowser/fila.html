@@ -9,4 +9,43 @@
         'style.css',
         'imagem.png'
     ]
+    // Adiciona à fila
+    fila.push('doguinho.png')
+    // Remove o primeiro da fila
+    fila.shift()
+
+    // ========================
+    // Receita para criar filas
+    // ========================
+    // - enqueue
+    // - dequeue
+
+    class Queue {
+        constructor() {
+            this.items = []
+        }
+        enqueue(item) {
+            this.items.push(item)
+        }
+        dequeue() {
+            return this.items.shift()
+        }
+        print() {
+            console.log(this.items.toString())
+        }
+    }
+    
+    // Design code first
+    var requests = new Queue();
+
+    // Open Closed
+    // Open: Aberto para extensões
+    // Closed: Fechado para modificações
+    requests.enqueue('scripts.js')
+    requests.dequeue()
+    requests.enqueue('style.css')
+    requests.enqueue('imagem.png')
+    requests.enqueue('doguinho.png')
+    requests.print()
+
 </script>

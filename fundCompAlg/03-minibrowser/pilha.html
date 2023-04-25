@@ -1,0 +1,35 @@
+<script>
+    console.log('Pilha/Stack');
+    class BrowserHistoryStack{
+        constructor(){
+            this.cursor = 0;
+            this.items = [];
+        }
+
+        push(item){
+            this.cursor = this.cursor + 1;
+            this.items.push(item);
+        }
+        
+        back() { // pop
+            this.cursor = this.cursor - 1;
+            // return this.items.pop();
+        }
+
+        clear() {
+            this.cursor = 0;
+            this.items = [];
+        }
+        print(){
+            console.log('Cursor', this.cursor)
+            console.log('Itens', this.items);
+        }
+    }
+    const history = new BrowserHistoryStack();
+
+    history.push('google.com');
+    history.push('facebook.com');
+    history.push('youtube.com');
+    history.back();
+    history.print();
+</script>
