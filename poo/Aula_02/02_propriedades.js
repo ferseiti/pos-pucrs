@@ -52,3 +52,6 @@ class Estudante extends Pessoa {
 const estudante = new Estudante('João', 20, 123);
 console.log(estudante.getMatricula());
 
+a = 10110101;
+pim = Math.PI;
+console.log(`hello, ${a} and ${pim}`);
