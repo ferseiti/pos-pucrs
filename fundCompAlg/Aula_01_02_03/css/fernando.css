@@ -1,0 +1,32 @@
+
+h1 {
+    color: blue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    color: purple;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p#fernando {
+    color: red;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p#fernando:hover {
+    color: pink;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+div#oi p {
+    color: green;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+audio, video {
+    border: 1px solid black;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

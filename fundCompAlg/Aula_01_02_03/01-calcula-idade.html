@@ -1,7 +1,33 @@
-<title>Pagininha calcula idade</title>
+<!DOCTYPE html>
 
-<h1>Calculando a Idade</h1>
+<html lang="pt-br">
 
-<script>
-    document.write(2022 - prompt("Qual o seu ano de nascimento?"))
-</script>
+<head>
+
+    <title>Pagininha calcula idade</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/fernando.css">
+    <script src="js/populate.js"></script>
+</head>
+
+<body onload="populateHeader()">
+    
+    <div>
+        <audio src="/home/ferseiti/Downloads/slide_whistle.wav" controls>Peh</audio>
+    </div>
+    <div>
+        <video src="/home/ferseiti/Downloads/20220801.mp4" controls>Video</video>
+    </div>
+    <div>
+        <p>Idade:</p>
+        <p id="fernando">
+            <script>
+                document.write(2022 - prompt("Qual o seu ano de nascimento?"))
+            </script>
+        </p>
+    </div>
+    <div id="oi">
+        <p>Olá</p>
+    </div>
+</body>
+</html>
