@@ -1,0 +1,76 @@
+body {
+    background: #fffaeb;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #0d6efd;
+    border: 1pdx solid #094093;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+buton + button {
+    margin-top: 0.5rem;
+}
+
+.conteudo { /* nome de classe pode ser referenciado com . */
+    padding: 0.5rem;
+}
+
+.dispositivo {
+    margin-top: 1rem;
+}
+
+.dispositivo::after {
+    content: "Celular?";
+}
+
+@media (min-width: 600px) {
+    .conteudo {
+        margin: 2rem auto;
+        max-width: 520px;
+        border: 1px solid black;
+        padding: 1rem;
+    }
+
+    button {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    button + button {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .dispositivo::after {
+        content: "Tablet?";
+    }
+}
+
+@media (min-width: 900px) {
+    .conteudo {
+        margin: 2rem auto;
+        max-width: 800px;
+        border: 1px solid black;
+        padding: 1rem;
+    }
+
+    .dispositivo::after {
+        content: "Laptop?";
+    }
+}
+
+@media (min-width: 1080px) {
+    .dispositivo::after {
+        content: "Desktop?";
+    }
+}

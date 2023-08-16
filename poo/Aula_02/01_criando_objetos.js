@@ -22,27 +22,49 @@ function Pessoa1 () {
     this.calculaIdade = function () {
         return new Date().getFullYear() - this.anoNascimento;
     }
-    this.olar = function(){
-        console.log("Olá! Dentro da função");
-    }
 }
 
 const pessoa1 = new Pessoa1();
-pessoa1.olar();
 console.log(pessoa1);
 pessoa1.calculaIdade()
 console.log(pessoa1.calculaIdade());
 
-
+class Pessoa {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+    setNome(nome) {
+        this.nome = nome;
+    }
+    setIdade(idade) {
+        this.idade = idade;
+    }
+}
 
 // Protótipo
 
-// const pessoa = new Pessoa('João', 20);
-// console.log(pessoa);
+const pessoa = new Pessoa('João', 20);
+console.log(pessoa);
 
-// const p2 = Object.getPrototypeOf(pessoa);
-// console.log(p2);
+const p2 = Object.getPrototypeOf(pessoa);
+console.log(p2);
 
-// p2.setNome('Maria');
-// p2.setIdade(30);
-// console.log(p2);
+p2.setNome('Maria');
+p2.setIdade(30);
+console.log(p2);
+
+// Método estático
+class Conta {
+    static PI = 3.1415;
+    static soma(x, y) {
+        return x + y;
+    }
+    static sayHello() {
+        console.log("Hello!");
+    }
+};
+
+console.log("Soma de 1 + 2 = " + Conta.soma(1, 2));
+Conta.sayHello();
+console.log("PI = " + Conta.PI);

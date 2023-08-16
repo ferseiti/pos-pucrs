@@ -28,3 +28,13 @@ Em javascript existem algumas formas de se percorrer um array:
 # Funções
 
 Pode possuir um nome. Mas pode ser uma função anônima.
+
+# Exceptions
+
+Pode-se criar sua própria exceção extendendo a clase Error.
+
+Try, catch e finally. Finally sempre é executado.
+
+# Asyncronous functions
+
+Callbacks
