@@ -65,6 +65,14 @@ class Conta {
     }
 };
 
+class MaisConta extends Conta {
+    static soma(x, y, z) {
+        return z+ x + y + 1;
+    }
+}
+
 console.log("Soma de 1 + 2 = " + Conta.soma(1, 2));
 Conta.sayHello();
 console.log("PI = " + Conta.PI);
+
+console.log(MaisConta.soma(MaisConta.PI, 3, 4))
