@@ -28,6 +28,10 @@ npm create vite@latest nome-do-projeto
 
 Os comandos válidos para o projeto também podem ser verificados em `package.json`.
 
+## Demo full stack
+
+[Next FCC Family Guy](https://github.com/Yazdun/next-fcc-familyguy)
+
 # Referências
 [Stackblitz](https://stackblitz.com/)
 
