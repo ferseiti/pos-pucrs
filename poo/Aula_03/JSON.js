@@ -8,5 +8,7 @@ var obj = JSON.parse(json, function (key, value) {
     }
 });
 
+console.log(obj);
+
 console.log(obj.name);
 console.log(obj.birthDate);
