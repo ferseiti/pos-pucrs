@@ -18,4 +18,21 @@ export class Carro{
             else
                 this.#_tanque += quantidade;
     }
+
+    #_setName(nome){
+        this.nome = nome;
+    }
+
+    #_getCarro(){
+        return this.nome + " - " + this.placa;
+    }
+
+    printCarro(){
+        console.log(this.#_getCarro());
+    }
+    register(nome, placa)
+    {
+        this.#_setName(nome);
+        this.placa = placa;
+    }
 }

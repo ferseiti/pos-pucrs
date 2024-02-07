@@ -12,3 +12,6 @@ console.log(carro.tanque);
 
 carro.tanque = 10;
 console.log(carro.tanque);
+
+carro.register("Fusca", "ABC-1234");
+carro.printCarro();
