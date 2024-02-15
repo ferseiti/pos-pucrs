@@ -18,6 +18,8 @@ Os comandos do servidor podem ser definidos em package.json. Por exemplo, para i
 }
 ```
 
+### Nodemon
+
 Para que não seja necessário reiniciar o servidor constanemente, uma facilidade é instalar o `nodemon`, que reinicia o servidor automaticamente sempre que um arquivo é modificado. Para isso, basta executar `npm install nodemon` no diretório do projeto e adicionar o seguinte trecho ao arquivo `package.json`:
 
 ```json
@@ -27,3 +29,8 @@ Para que não seja necessário reiniciar o servidor constanemente, uma facilidad
 ```
 
 É possível instalar um módulo npm globalmente, com a utilização do argumento `-g` no comando `npm install`.
+
+
+### Express Generator
+
+Outra ferramenta útil para criação de projetos Express é o `express-generator`. Para instalar, basta executar `npm install express-generator -g`. Para criar um projeto, basta executar `express nomeDoProjeto`. O comando cria um diretório com o nome do projeto, diretórios e arquivos pertinentes a um projeto, e instala as dependências necessárias.
