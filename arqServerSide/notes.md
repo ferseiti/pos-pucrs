@@ -34,3 +34,5 @@ Para que não seja necessário reiniciar o servidor constanemente, uma facilidad
 ### Express Generator
 
 Outra ferramenta útil para criação de projetos Express é o `express-generator`. Para instalar, basta executar `npm install express-generator -g`. Para criar um projeto, basta executar `express nomeDoProjeto`. O comando cria um diretório com o nome do projeto, diretórios e arquivos pertinentes a um projeto, e instala as dependências necessárias.
+
+Muita coisa é facilitada. Por exemplo, algumas rotas são criadas como exemplo, para que se consiga criar outras posteriormente nos mesmos moldes.
